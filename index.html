@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Clima</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Perú Clima</h1>
+            <h2>App Perú Clima</h2>
+            <p class="descripcion">Selecciona una ciudad peruana para consultar su temperatura, humedad y viento en tiempo real.</p>
+        </header>
+
+        <section class="buscador">
+            <select id="select-ciudad">
+                <option value="" disabled selected>-- Selecciona una ciudad --</option>
+                <option value="lima">Lima</option>
+                <option value="cusco">Cusco</option>
+                <option value="arequipa">Arequipa</option>
+                <option value="trujillo">Trujillo</option>
+                <option value="piura">Piura</option>
+                <option value="iquitos">Iquitos</option>
+                <option value="puno">Puno</option>
+                <option value="huancayo">Huancayo</option>
+            </select>
+            <button id="btn-consultar">Consultar</button>
+        </section>
+
+        <section class="resultados">
+            <div id="mensaje-error" class="error" style="display: none;"></div>
+            <div id="resultado-clima"></div>
+        </section>
+    </main>
+
+    <script src="appcomplemento.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
